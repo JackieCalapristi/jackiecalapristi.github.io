@@ -1,1 +1,6 @@
-console.log('This would be the main JS file.');
+(function($){
+  $(function(){
+    // For hamburger sidebar 
+    $('.button-collapse').sideNav();
+  }); 
+})(jQuery); 
