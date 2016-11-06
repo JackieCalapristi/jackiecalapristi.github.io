@@ -8,9 +8,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
     <!--awesome-definitely-created-with-piant favicon-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <!--Import materialize-->
+    <script type="text/javascript" src="materialize-v0.97.7/materialize/js/materialize.min.js">
+    </script>
+    <script type="text/javascript">
+      (function($){
+        $(function(){
+          // For hamburger sidebar 
+          $('.button-collapse').sideNav();
+        }); 
+      })(jQuery); 
+    </script>
     <!--Google Analytics-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,11 +38,9 @@
       * {
         box-sizing: border-box;
       }
-
       body {
         margin: 0;
       }
-
       .code {
         width: 100%;
         background: #f46c69;
@@ -37,7 +48,6 @@
         position: relative;
         height: 350px;
       }
-
       .svg {
         position: absolute;
         bottom: -10px;
@@ -46,45 +56,37 @@
         right: 0;
         margin: auto;
       }
-
       #macbook {
         //display: block;
         animation: macbook .7s linear;
         transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
-
       #coder {
         animation: coder .8s linear;
         transform-origin: center center;
       }
-
       #coffee {
         animation: coffee 1s linear;
         transform-origin: 83% 80%;
       }
-
       #smoke {
         animation: smoke 3s infinite;
       }
-
       @keyframes macbook {
         0%{transform: translateY(300px)}
         50%{transform: translateY(10px)}
         100% {transform: translateY(0px)}
       }
-
       @keyframes coder {
         0%{transform: scale(0); opacity: 0}
         50%{transform: scale(1.5); opacity: 1}
         100% {transform: scale(1); opacity:1}
       }
-
       @keyframes coffee {
         0%{transform: scale(0); opacity: 0}
         50%{transform: scale(1.5); opacity: 1}
         100% {transform: scale(1); opacity:1}
       }
-
       @keyframes smoke {
         0%{transform: translateY(0px); opacity: 1;}
         50%{ opacity: .5;}
@@ -114,7 +116,6 @@
       .st21{fill:#7C7F83;}
       .st22{fill:#FFFFFE;}
       .st23{fill:#F96759;}
-
       footer.page-footer{margin-top:1px;}
       .text-align-center{text-align:center;}
       .row{margin-bottom:0px;}
@@ -124,18 +125,27 @@
     </style>
   </head>
   <body>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <nav class="" role="navigation">
+    <nav role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo">Jackie Calapristi</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">LinkedIn</a></li>
-          <li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">Gmail</a></li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">LinkedIn</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">Gmail</a>
+          </li>
           <!-- <li><a href="#">Resume</a></li> --> <!--TODO::Add Resume-->
         </ul>
-        <ul id="nav-mobile" class="side-nav">
+        <ul class="side-nav" id="mobile-demo">
+         <li>
+            <a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">LinkedIn</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">Gmail</a>
+          </li>
+          <!-- <li><a href="#">Resume</a></li> --> <!--TODO::Add Resume-->
         </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   <div class="section no-pad-bot" id="index-banner">
