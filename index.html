@@ -30,7 +30,6 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
       ga('create', 'UA-71703832-1', 'auto');
       ga('send', 'pageview'); 
     </script>
@@ -41,12 +40,15 @@
       body {
         margin: 0;
       }
+      nav {
+        background-color:#757575;
+      }
       .code {
         width: 100%;
-        background: #f46c69;
+        background: #757575 ; 
         overflow: hidden;
         position: relative;
-        height: 350px;
+        height: 415px;
       }
       .svg {
         position: absolute;
@@ -122,6 +124,10 @@
       .no-pad-bot{padding-top:0px;}
       img.responsive-img, video.responsive-video{margin-top:15px;}
       .remove-top-space{margin-top:-65px;}
+      .link-text{border-bottom: 2px #a7ffeb; padding-bottom:4px;
+          font-weight: 200;}
+          a:hover.link-text {border-bottom: 2px #4db6ac; padding-bottom:4px; color: #4db6ac !important;
+          font-weight: 350;}
     </style>
   </head>
   <body>
@@ -148,58 +154,61 @@
         </ul>
       </div>
     </nav>
-  <div class="section no-pad-bot" id="index-banner">
+  <div class="section no-pad-bot" id="index-banner" style="margin-top:-33px;">
+      <div style="background-image:url(img/card4.jpg); background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; height:490px; " alt="">
+        <h1 class="header center white-text thin" style="padding-top:137px; font-size:65px;">It's nice to meet you</h1>
+        <div class="row center">
+        <h5 class="header col s12 white-text thin" style="margin-top:5px !important; font-weight:300; font-size:26px">My name is <span style="font-weight: 400; font-size: 30px;"> Jackie Calapristi</span> <br> & I create for the modern web.</h5>
+        </div>
+      </div>
     <div class="container">
       <br><br>
-      <h1 class="header center red-text text-lighten-1 thin">It's nice to meet you</h1>
-      <div class="row center">
-        <h5 class="header col s12">My name is <b>Jackie Calapristi</b> and I create for the modern web.</h5>
-      </div>
-      <div class="row center">
-       <img src="img/JackieJackie.PNG" alt="" class="circle responsive-img">
-      </div>
       <br><br>
     </div>
   </div>
   <div class="container">
     <div class="section">
-      <!--   Icon Section   -->
-      <!--  <div class="row">
-        <div class="col s4 m4">
-          <div class="icon-block">
-            <h2 class="center red-text text-accent-1"> <i class="medium material-icons">face</i></h2>
-            <h5 class="center">People</h5>
-            <p class="light"> You could call me a people person. From writing readable code to designing intuitive UI's, people are at the heart of all the tools I build.</p>
+      <div class="row center">
+        <div class="col s4 m4 remove-top-space"> 
+          <div class="row left">
+           <img src="img/jacquelinec.jpg" alt="" class="circle responsive-img">
           </div>
         </div>
-        <div class="col s4 m4">
-          <div class="icon-block">
-            <h2 class="center red-text text-accent-1"><i class="medium material-icons">equalizer</i></h2>
-            <h5 class="center">Data</h5>
-            <p class="light">Numbers excite me. Trend speculation, data visualizations and eye-catching reports oh my.</p>
-          </div>
-        </div>
-        <div class="col s4 m4">
-          <div class="icon-block">
-            <h2 class="center red-text text-accent-1"><i class="medium material-icons">dashboard</i></h2>
-            <h5 class="center">Web</h5>
-            <p class="light">Blink and you'll miss it change. I spend a large part of my day making the web a little more responsive, dynamic and oh so fun. </p>
-          </div>
-        </div>
-      </div> -->
-      <div class="row">
-        <div class="col s12 m12 remove-top-space"> 
+        <div class="col s8 m8 remove-top-space"> 
           <div>
+          <br><br>
+            <h4 class="header center thin" style="font-weight:300; font-size:35px">I'm a software engineer.</h4>
             <p class="flow-text text-align-center">
-              I'm a software engineer working at Conversica, an AI startup nestled right between Seattle and Vancouver.</p> 
-              <p class="flow-text text-align-center"> Let's <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">get coffee</a> sometime!</p>
+              I work across the stack at<span style="font-weight: 400; font-size: 25px;"> Conversica</span>, an AI startup nestled right between Seattle, WA & Vancouver, BC.</p> 
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="section">
+    <div class="row left">
+      <div class="col s6 m6" style="padding: 0px 20px 0px 20px"> 
+        <p class="flow-text">
+         <span style="font-size:20px;">How lucky am I to get paid to build the future?</span>
+         <span style="font-size:15px;">Few things excite me quite like problem solving and creating elegant technologies alongside great minds. I am driven by the belief that technological innovation realized by a passionate team of software engineers can change the lives of everyday people and the world. </span>
+        </p>
+      </div>
+      <div class="col s6 m6" style="padding: 0px 20px 0px 20px"> 
+         <p class="flow-text"> 
+         <span style="font-size:20px;">You could call me a people person. </span>
+         <span style="font-size:15px;"> After 9 public speaking events last year and 5 scheduled for 2017, my extroverted secret is out. Communicating complex ideas to an array of audiences comes naturally to me. From writing readable code to designing intuitive UI's, people are at the heart of all that I build: neckbeards, execs and nettlesome end users alike. </span>
+         </p>
+      </div>
+    </div>
+  </div>
     <div class="section no-pad-bot" id="index-banner">
     <div class="code">
+      <div>
+        <h3 class="text-align-center thin white-text"> 
+        &nbsp;&nbsp;&nbsp;Let's <a class="teal-text text-lighten-4 link-text" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">get coffee</a> sometime!</h3>
+      </div>
       <div class="svg">
           <?xml version="1.0" encoding="utf-8"?>
           <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -612,38 +621,38 @@
       </div>
     </div>
   </div>
-  <footer class="page-footer  teal lighten-2">
+  <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <!-- <h5 class="white-text">Company Bio</h5>
+        <!-- <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
- -->
-        </div>
-        <!--TODO:: Make all of this actually hold content -->
-        <div class="col l3 s12">
-          <!-- <h5 class="white-text">Settings</h5> -->
+ 
+        </div> -->
+        <!-- TODO:: Make all of this actually hold content -->
+        <!-- <div class="col l3 s12">
+           <h5 class="white-text">Settings</h5> 
           <ul>
-         <!--    <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 1</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li> -->
+            <li><a class="white-text" href="#!">Link 4</a></li> 
           </ul>
         </div>
         <div class="col l3 s12">
-          <!-- <h5 class="white-text">Connect</h5> -->
+           <h5 class="white-text">Connect</h5> 
           <ul>
-         <!--    <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 1</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li> -->
-          </ul>
-        </div>
+            <li><a class="white-text" href="#!">Link 4</a></li> 
+          </ul> -->
+        </div> 
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-        Made by <a class="orange-text text-lighten-3" target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">Jackie Calapristi</a>
+      <div class="container text-align-center">
+        Made by <a class="teal-text text-lighten-4" target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">Jackie Calapristi</a>
       </div>
     </div>
   </footer>
