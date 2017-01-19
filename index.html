@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <!--awesome-definitely-created-with-piant favicon-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <!--Import jQuery before materialize.js-->
+    <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
     </script>
     <!--Import materialize-->
@@ -41,8 +41,14 @@
       body {
         margin: 0;
       }
-      nav {
-        background-color:#757575;
+      .navbar.transparent.navbar-inverse .navbar-inner {
+        border-width: 0px;
+        -webkit-box-shadow: 0px 0px;
+        box-shadow: 0px 0px;
+        background-color: rgba(0,0,0,0.0);
+        background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+        background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+        background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
       }
       .code {
         width: 100%;
@@ -50,6 +56,13 @@
         overflow: hidden;
         position: relative;
         height: 415px;
+      }
+      .top-menu-item {
+        width: 40px;
+        display: block;
+        float: left;
+        margin-right: 40px;
+        padding: 2px;
       }
       .svg {
         position: absolute;
@@ -132,18 +145,19 @@
     </style>
   </head>
   <body>
-    <nav role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo">Jackie Calapristi</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
+    <nav role="navigation" class="navbar transparent navbar-inverse">
+      <div class="nav-wrapper container .navbar-inner" >
+        <ul class="left hide-on-small-and-down">
+          <li><a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi"&nbsp</a></li>
           <li>
-            <a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">LinkedIn</a>
+            <a target="_blank" style="margin-left:21px;" href="https://www.linkedin.com/in/jacquelinecalapristi">LinkedIn</a>
           </li>
           <li>
             <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">Gmail</a>
           </li>
-          <!-- <li><a href="#">Resume</a></li> --> <!--TODO::Add Resume-->
+          <!-- <li><a href="#">Resume</a></li>--> <!--TODO::Add Resume--> 
         </ul>
+      <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-med-and-up"><i class="material-icons">menu</i></a>
         <ul class="side-nav" id="mobile-demo">
          <li>
             <a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">LinkedIn</a>
@@ -155,15 +169,16 @@
         </ul>
       </div>
     </nav>
-  <div class="section no-pad-bot" id="index-banner" style="margin-top:-33px;">
+  <div class="section no-pad-bot" id="index-banner" style="margin-top:-135px;">
       <div style="background-image:url(img/card4.jpg); background-size: cover;
         background-repeat: no-repeat;
         background-position: center center; height:490px; " alt="">
-        <h1 class="header center white-text thin" style="padding-top:137px; font-size:65px;">It's nice to meet you</h1>
+        <h1 class="header center white-text thin" style="padding-top:190px; font-size:65px;">It's nice to meet you</h1>
         <div class="row center">
-        <h5 class="header col s12 white-text thin" style="margin-top:5px !important; font-weight:300; font-size:26px">My name is <span style="font-weight: 400; font-size: 30px;"> Jackie Calapristi</span> <br> & I create for the modern web.</h5>
+        <h5 class="header col s12 white-text thin" style="margin-top:-10px !important; font-weight:300; font-size:26px">My name is <span style="font-weight: 400; font-size: 30px;"><a href="" style="color:white;">Jackie Calapristi</a></span> <br> & I create for the modern web.</h5>
         </div>
       </div>
+  </div>
     <div class="container">
       <br><br>
       <br><br>
@@ -199,7 +214,7 @@
       <div class="col s6 m6" style="padding: 0px 20px 0px 20px"> 
          <p class="flow-text"> 
          <span style="font-size:20px;">You could call me a people person. </span>
-         <span style="font-size:15px;"> After nine public speaking events last year and five scheduled for 2017, my extroverted secret is out. Communicating complex ideas effectively to an array of audiences comes naturally to me and I enjoy it. From creating specs and presenting at conferences, to writing readable code and designing intuitive UI's, people are at the heart of all that I build: neckbeards, execs and nettlesome end users alike.  </span>
+         <span style="font-size:15px;"> After nine public speaking events last year and five scheduled for 2017, my extroverted secret is out. Communicating complex ideas effectively to an array of audiences comes naturally to me and I enjoy it. From creating specs, to writing readable code and designing intuitive UI's, people are at the heart of all that I build: neckbeards, execs and nettlesome end users alike. </span>
          </p>
       </div>
     </div>
@@ -622,7 +637,7 @@
       </div>
     </div>
   </div>
-  <footer class="page-footer grey darken-3">
+  <footer class="page-footer grey darken-3" style="margin-top: -2px;">
     <div class="container">
       <div class="row">
         <!-- <div class="col l6 s12">
