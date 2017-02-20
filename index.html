@@ -11,151 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <!--awesome-definitely-created-with-piant favicon-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
-    </script>
-    <!--Import materialize-->
-    <script type="text/javascript" src="materialize-v0.97.7/materialize/js/materialize.min.js">
-    </script>
-    <script type="text/javascript">
-      (function($){
-        $(function(){
-          // For hamburger sidebar 
-          $('.button-collapse').sideNav();
-        }); 
-      })(jQuery); 
-    </script>
-    <!--Google Analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-71703832-1', 'auto');
-      ga('send', 'pageview'); 
-    </script>
-    <style type="text/css">
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-      }
-      .navbar.transparent.navbar-inverse .navbar-inner {
-        border-width: 0px;
-        -webkit-box-shadow: 0px 0px;
-        box-shadow: 0px 0px;
-        background-color: rgba(0,0,0,0.0);
-        background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-        background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-        background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-      }
-      .code {
-        width: 100%;
-        background: #757575 ; 
-        overflow: hidden;
-        position: relative;
-        height: 415px;
-      }
-      .top-menu-item {
-        width: 40px;
-        display: block;
-        float: left;
-        margin-right: 40px;
-        padding: 2px;
-      }
-      .svg {
-        position: absolute;
-        bottom: -10px;
-        width: 700px;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
-      #macbook {
-        //display: block;
-        animation: macbook .7s linear;
-        transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
-      #coder {
-        animation: coder .8s linear;
-        transform-origin: center center;
-      }
-      #coffee {
-        animation: coffee 1s linear;
-        transform-origin: 83% 80%;
-      }
-      #smoke {
-        animation: smoke 3s infinite;
-      }
-      @keyframes macbook {
-        0%{transform: translateY(300px)}
-        50%{transform: translateY(10px)}
-        100% {transform: translateY(0px)}
-      }
-      @keyframes coder {
-        0%{transform: scale(0); opacity: 0}
-        50%{transform: scale(1.5); opacity: 1}
-        100% {transform: scale(1); opacity:1}
-      }
-      @keyframes coffee {
-        0%{transform: scale(0); opacity: 0}
-        50%{transform: scale(1.5); opacity: 1}
-        100% {transform: scale(1); opacity:1}
-      }
-      @keyframes smoke {
-        0%{transform: translateY(0px); opacity: 1;}
-        50%{ opacity: .5;}
-        100%{transform: translateY(-15px); opacity: 0;}
-      }
-      .st0{fill:#EFEFEF;}
-      .st1{fill:#E3E4E5;}
-      .st2{fill:#2A333A;}
-      .st3{opacity:0.5;fill:#9E9E9E;}
-      .st4{fill:#5C5E60;}
-      .st5{fill:#404244;}
-      .st6{fill:#EBECED;}
-      .st7{fill:#FFFFFF;}
-      .st8{fill:#3C2415;}
-      .st9{fill:#432818;}
-      .st10{fill:#563726;}
-      .st11{fill:#FCFCFC;}
-      .st12{opacity:0.5;fill:#FCFCFC;}
-      .st13{fill:none;stroke:#EBECED;stroke-width:5;stroke-miterlimit:10;}
-      .st14{fill:#FEFEFE;}
-      .st15{fill:#EF7665;}
-      .st16{fill:#A4D9E4;}
-      .st17{fill:#B8C7CD;}
-      .st18{fill:#474A4E;}
-      .st19{fill:#65B6C1;}
-      .st20{fill:#F46C69;}
-      .st21{fill:#7C7F83;}
-      .st22{fill:#FFFFFE;}
-      .st23{fill:#F96759;}
-      footer.page-footer{margin-top:1px;}
-      .text-align-center{text-align:center;}
-      .row{margin-bottom:0px;}
-      .no-pad-bot{padding-top:0px;}
-      img.responsive-img, video.responsive-video{margin-top:15px;}
-      .remove-top-space{margin-top:-65px;}
-      .link-text{border-bottom: 2px #a7ffeb; padding-bottom:4px;
-          font-weight: 200;}
-          a:hover.link-text {border-bottom: 2px #4db6ac; padding-bottom:4px; color: #4db6ac !important;
-          font-weight: 350;}
-    </style>
+    <!-- styles -->
+    <link rel="stylesheet/less" type="text/css" href="styles.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
   </head>
   <body>
     <nav role="navigation" class="navbar transparent navbar-inverse">
-      <div class="nav-wrapper container .navbar-inner" >
+      <div class="nav-wrapper container navbar-inner" >
         <ul class="left hide-on-small-and-down">
-          <li><a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi"&nbsp</a></li>
+          <!-- <li>
+            <a href="#"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+          </li> --> <!--TODO::Add Resume--> 
           <li>
-            <a target="_blank" style="margin-left:21px;" href="https://www.linkedin.com/in/jacquelinecalapristi">LinkedIn</a>
+            <a target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi"> LinkedIn</a>
           </li>
           <li>
-            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">Gmail</a>
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">Gmail</i></a>
           </li>
-          <!-- <li><a href="#">Resume</a></li>--> <!--TODO::Add Resume--> 
+          <!-- <li> TODO::Add Blog
+            <a target="_blank" href="/Website/blog/">Blog</a>
+          </li> -->
         </ul>
       <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-med-and-up"><i class="material-icons">menu</i></a>
         <ul class="side-nav" id="mobile-demo">
@@ -169,18 +44,17 @@
         </ul>
       </div>
     </nav>
-  <div class="section no-pad-bot" id="index-banner" style="margin-top:-135px;">
-      <div style="background-image:url(img/card4-optimized.jpg); background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center; height:500px; " alt="">
-        <h1 class="header center white-text thin" style="padding-top:200px; font-size:65px;">It's nice to meet you</h1>
-        <div class="row center">
-        <h5 class="header col s12 white-text thin hide-on-small-only" style="margin-top:-10px !important; font-weight:300; font-size:26px">My name is <span style="font-weight: 400; font-size: 30px;"><a href="" style="color:white;">Jackie Calapristi</a></span> <br> & I create for the modern web.</h5>
-        </div>
+  <div class="section no-pad-bot margin-top-135" id="index-banner">
+    <div class="header-styles" alt="">
+      <h1 class="header center white-text thin header-content-styles">It's nice to meet you</h1>
+      <div class="row center">
+        <h5 class="header col s12 white-text thin hide-on-small-only header-one-liner">My name is 
+          <span class="header-span-name white-text"><a class="white-text" href="https://www.linkedin.com/in/jacquelinecalapristi">Jackie Calapristi</a></span> <br> & I create for the modern web.</h5>
       </div>
+    </div>
   </div>
-      <br><br>
-      <br><br>
+    <br><br>
+    <br><br>
   </div>
   <div class="container">
     <div class="section">
@@ -193,9 +67,9 @@
         <div class="col s8 m8 remove-top-space"> 
           <div>
           <br><br>
-            <h4 class="header center thin" style="font-weight:300; font-size:35px">I'm a software engineer.</h4>
+            <h4 class="header center thin header-about-me">I'm a software engineer.</h4>
             <p class="flow-text text-align-center">
-              I work across the stack at<span style="font-weight: 400; font-size: 25px;"> Conversica</span>, an AI startup nestled right between Seattle, WA & Vancouver, BC.</p> 
+              I work across the stack at<span class="span-about-me"> Conversica</span>, an AI startup nestled right between Seattle, WA & Vancouver, BC.</p> 
           </div>
         </div>
       </div>
@@ -204,41 +78,41 @@
   <div class="container">
     <div class="section">
       <div class="row left">
-        <div class="col s6 m6" style="padding: 0px 15px 20px 20px"> 
+        <div class="col s6 m6 padding-about-me"> 
           <p class="flow-text">
-           <span style="font-size:20px;">How lucky am I to get paid to build the future?</span>
-           <span style="font-size:15px;">Few things excite me quite like problem solving & creating elegant technologies alongside great minds. I have an insatiable love of learning new tools, challenging myself to solve bigger problems & pursuing the adventure that is lifelong personal growth. I am driven by the belief that technological innovation realized by a passionate team of software engineers can change the lives of everyday people & the world. </span>
+           <span class="font-size-20">How lucky am I to get paid to build the future?</span>
+           <span class="font-size-15">Few things excite me quite like problem solving & creating elegant technologies alongside great minds. I have an insatiable love of learning new tools, challenging myself to solve bigger problems & pursuing the adventure that is lifelong personal growth. I am driven by the belief that technological innovation realized by a passionate team of software engineers can change the lives of everyday people & the world. </span>
           </p>
         </div>
-        <div class="col s6 m6" style="padding: 0px 20px 0px 20px"> 
+        <div class="col s6 m6 padding-about-me"> 
            <p class="flow-text"> 
-           <span style="font-size:20px;">You could call me a people person. </span>
-           <span style="font-size:15px;"> After nine public speaking events last year and five more scheduled for 2017, my extroverted secret is out. Communicating complex ideas effectively to an array of audiences comes naturally to me and I enjoy it. From creating specs and presenting at conferences, to writing readable code and designing intuitive UI's, people are at the heart of all that I build: neckbeards, execs and nettlesome end users alike. </span>
+           <span class="font-size-20">You could call me a people person. </span>
+           <span class="font-size-15"> After nine public speaking events last year and five more scheduled for 2017, my extroverted secret is out. Communicating complex ideas effectively to an array of audiences comes naturally to me and I enjoy it. From creating specs and presenting at conferences, to writing readable code and designing intuitive UI's, people are at the heart of all that I build: neckbeards, execs and nettlesome end users alike. </span>
            </p>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="section" style="padding-bottom:20px;">
+    <div class="section padding-bottom-20">
       <div class="row center">
-         <h4 class="header center thin" style="font-weight: 300;"> This is my <span style="font-weight: 400; font-size: 35px;">Toolbox</span> </h4>
+         <h4 class="header center thin font-weight-300"> This is my <span class="header-toolbox">Toolbox</span> </h4>
       </div>
     </div>
   </div>
     <div class="section">
       <div class="row center">
-        <div class="col s4 m2 l2 center" style="padding-top:10px;"><img src="img/php.PNG"></div>
+        <div class="col s4 m2 l2 center padding-top-10"><img src="img/php.PNG"></div>
         <div class="col s4 m2 l2 center"><img src="img/github.PNG"></div>
         <div class="col s4 m2 l2 center"><img src="img/JS.PNG"></div>
-        <div class="col s4 m2 l2 center" style="padding-top:10px;"><img src="img/REST.PNG"></div>
+        <div class="col s4 m2 l2 center padding-top-10"><img src="img/REST.PNG"></div>
         <div class="col s4 m2 l2 center"><img src="img/MySql.PNG"></div>
         <div class="col s4 m2 l2 center"><img src="img/java.PNG"></div>
       </div>
       <div class="row center">
         <div class="col s4 m2 l2 center"><img src="img/Yii.PNG"></div>
         <div class="col s4 m2 l2 center"><img src="img/Linux.PNG"></div>
-        <div class="col s4 m2 l2 center"><img src="img/materialize.PNG" style="padding-top:15px;"></div>
+        <div class="col s4 m2 l2 center"><img src="img/materialize.PNG" class="padding-top-15"></div>
         <div class="col s4 m2 l2 center"><img src="img/csharp.PNG"></div>
         <div class="col s4 m2 l2 center"><img src="img/grunt.PNG"></div>
         <div class="col s4 m2 l2 center"><img src="img/python.PNG"></div>
@@ -252,12 +126,30 @@
         <div class="col s4 m2 l2 center"><img src="img/graphlab.PNG"></div>
       </div>
     </div>
-  <!-- </div> -->
     <div class="section no-pad-bot" id="index-banner">
     <div class="code">
-      <div>
-        <h3 class="text-align-center thin white-text"> 
-        &nbsp;&nbsp;&nbsp;Let's <a class="teal-text text-lighten-4 link-text" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">get coffee</a> sometime!</h3>
+      <div class="row center">
+        <h3 class="text-align-center thin white-text">Let's get coffee sometime!</h3>
+        <div class="col s12 m12 l12"> 
+           <p class="white-text thin text-align-center"> 
+            <span class="font-size-18"> Have a cool project you think we could collab on? <br> Looking for a speaker for your next event? Contact me! </span>
+           </p>
+        </div>
+      </div>
+      <div class="section"> 
+        <div class="row center">
+          <div class="col s4 m4 l4 align-center">
+          </div>
+          <div class="col s4 m4 l4 align-center white-text margin-bottom-15">
+             <a class="white-text" target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="white-text margin-15" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">
+              <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col s4 m4 l4 center"><i></i></div>
+        </div>
       </div>
       <div class="svg">
           <?xml version="1.0" encoding="utf-8"?>
@@ -671,7 +563,7 @@
       </div>
     </div>
   </div>
-  <footer class="page-footer grey darken-3" style="margin-top: -2px;">
+  <footer class="page-footer grey darken-3 margin-top-2">
     <div class="container">
       <div class="row">
         <!-- <div class="col l6 s12">
@@ -706,8 +598,33 @@
       </div>
     </div>
   </footer>
-  <!-- Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <!-- Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+      <!--Font Awesome -->
+    <script src="https://use.fontawesome.com/8f3bb4c7f5.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <!--Import materialize-->
+    <script type="text/javascript" src="materialize-v0.97.7/materialize/js/materialize.min.js">
+    </script>
+    <script type="text/javascript">
+      (function($){
+        $(function(){
+          // For hamburger sidebar 
+          $('.button-collapse').sideNav();
+        }); 
+      })(jQuery); 
+    </script>
+    <!--Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-71703832-1', 'auto');
+      ga('send', 'pageview'); 
+    </script>
   </body>
 </html>
