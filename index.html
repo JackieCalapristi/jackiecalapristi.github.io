@@ -12,7 +12,8 @@
     <!--awesome-definitely-created-with-piant favicon-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- styles -->
-    <link rel="stylesheet/less" type="text/css" href="styles.less"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="calendar_styles.css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
   </head>
   <body>
@@ -54,12 +55,11 @@
     </div>
   </div>
     <br><br>
-    <br><br>
   </div>
   <div class="container">
     <div class="section">
       <div class="row center">
-        <div class="col s4 m4 remove-top-space"> 
+        <div class="col s4 m4"> 
           <div class="row left">
            <img src="img/jacquelinec.jpg" alt="" class="circle responsive-img">
           </div>
@@ -86,14 +86,33 @@
         </div>
         <div class="col s6 m6 padding-about-me"> 
            <p class="flow-text"> 
-           <span class="font-size-20">You could call me a people person. </span>
+           <span class="font-size-20">You could call me a people person. </span><br>
            <span class="font-size-15"> After nine public speaking events last year and five more scheduled for 2017, my extroverted secret is out. Communicating complex ideas effectively to an array of audiences comes naturally to me and I enjoy it. From creating specs and presenting at conferences, to writing readable code and designing intuitive UI's, people are at the heart of all that I build: neckbeards, execs and nettlesome end users alike. </span>
            </p>
         </div>
       </div>
     </div>
   </div>
+  <div class="section center">
+    <div class="row center padding-none">
+      <div class="col s12 m12 center padding-none"> 
+        <h4 class="header center thin font-weight-300 padding-none margin-bottom-10"> I'm a pretty big fan of <span class="header-toolbox">Github</span> </h4>
+      </div>
+    </div>
+    <div class="container padding-none">
+      <div class="section center padding-none">
+        <div class="row center padding-none">
+          <div class="col s12 m12 l12 center padding-none"> 
+            <div class="calendar">
+              <!-- Loading calendar-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
+  </div>
     <div class="section padding-bottom-20">
       <div class="row center">
          <h4 class="header center thin font-weight-300"> This is my <span class="header-toolbox">Toolbox</span> </h4>
@@ -132,23 +151,33 @@
         <h3 class="text-align-center thin white-text">Let's get coffee sometime!</h3>
         <div class="col s12 m12 l12"> 
            <p class="white-text thin text-align-center"> 
-            <span class="font-size-18"> Have a cool project you think we could collab on? <br> Looking for a speaker for your next event? Contact me! </span>
+            <span class="font-size-16"> Have a cool project you think we could collab on? <br> Looking for a speaker for your next event? Contact me! </span>
            </p>
         </div>
       </div>
       <div class="section"> 
         <div class="row center">
-          <div class="col s4 m4 l4 align-center">
+          <div class="col s3 m3 l3 align-center">
           </div>
-          <div class="col s4 m4 l4 align-center white-text margin-bottom-15">
-             <a class="white-text" target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">
-              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          <div class="col s6 m6 l6 align-center white-text margin-bottom-15">
+             <a class="white-text margin-4" target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">
+              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
             </a>
-            <a class="white-text margin-15" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">
+            <a class="white-text margin-4" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!">
               <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
             </a>
+            <a class="white-text margin-4" href="https://github.com/ava-jacquelinec">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="white-text margin-4" href="https://plus.google.com/+JackieCalapristi11">
+              <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="white-text margin-4" href="https://soundcloud.com/JackieCalapristi">
+              <i class="fa fa-soundcloud fa-2x" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="col s4 m4 l4 center"><i></i></div>
+          <div class="col s3 m3 l3 center">
+          </div>
         </div>
       </div>
       <div class="svg">
@@ -594,7 +623,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container text-align-center">
-        Made by <a class="teal-text text-lighten-4" target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">Jackie Calapristi</a>
+        Made by <a class="teal-text text-lighten-4" target="_blank" href="https://www.linkedin.com/in/jacquelinecalapristi">Jackie Calapristi</a> <i class="fa fa-copyright" aria-hidden="true"> 2017
       </div>
     </div>
   </footer>
@@ -625,6 +654,14 @@
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-71703832-1', 'auto');
       ga('send', 'pageview'); 
+    </script>
+
+    <!-- Include the library. -->
+    <script
+      src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+    </script>
+    <script>
+        GitHubCalendar(".calendar", "ava-jacquelinec");
     </script>
   </body>
 </html>
