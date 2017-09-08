@@ -42,10 +42,10 @@ It currently takes around 2 seconds to process the example input file. This is l
 ## Unlisted Extra Credit
 * Built out parsing of employee names. 
 
-##Concerns, Comments, Ideas
+## Concerns, Comments, Ideas
 Setting `$to` to null to indicate the output of 1 date could be designed differently. Allowing for the idea of all dates from one date to current day could be potentially beneficial.  
 
-##Future TODOs
+## Future TODOs
 * Utilize currently unutilized capture of employee names.
 * Build output file with results over printing results to the console.
 * Handle employee-specific participation in holidays.
