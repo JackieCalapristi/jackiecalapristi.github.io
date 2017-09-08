@@ -5,7 +5,7 @@ Here's an example input to the script as parsed in from the input file:
 ```
 1,"12/06/2015","12/09/2015"
 ```
-Here's a link to the full input file: [Input File](http://www.dropwizard.io/1.0.2/docs/)
+Here's a link to the full input file: [Input File](https://raw.githubusercontent.com/JackieCalapristi/JackieJackie11.github.io./master/puzzles/FindAvailableEmployeeHours/input.txt)
 
 Here's an example output:
 ```
