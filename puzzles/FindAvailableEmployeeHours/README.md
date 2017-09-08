@@ -38,11 +38,14 @@ It currently takes around 2 seconds to process the example input file. This is l
 3. Store input data in pre-defined arrays, a database, or another persistance layer to skip over the processing expense involved in parsing.
 4. Store the numerical day of week given a date with original input data to cut out manually calculating the day of week while processing the file.
 
+There are trade offs to each of these of course. Parallelizing can require a lot of overhead if the design includes a queueing system and worker pools that aren't already in place, however, parallelizing can work incredibly well if those are in place. Using a relational database can work great, but also feel clunky to access and get unorganized if it's not well managed and utlized by multiple people. Predefined arrays require a code change on every edit and can get large enough, with enough sub arrays and related data that it can, at a certain threshold, seem worth it to move it into a different persistence layer. Storing the numerical day of week in the input data seems like a low hanging fruit for improving performance.  
+
 ## Unlisted Extra Credit
 * Built out parsing of employee names. 
 
-## Concerns, Comments, Ideas
-Setting `$to` to null to indicate the output of 1 date could be designed differently. Allowing for the idea of all dates from one date to current day could be potentially beneficial.  
+## Comments, Ideas
+* Allowing for the idea of all dates from one date to current day could be potentially beneficial. Since the data would be generated from a static text file, we could have a fixed string like `current_date` for `$to` and then handing the rest of the logic in the function.
+* If I had more time, I would make this a lot more readable and elegant. :)
 
 ## Future TODOs
 * Utilize currently unutilized capture of employee names.
