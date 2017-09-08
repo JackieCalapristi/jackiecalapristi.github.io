@@ -40,13 +40,13 @@ It currently takes around 2 seconds to process the example input file. This is l
 4. Store the numerical day of week given a date with original input data to cut out manually calculating the day of week while processing the file.
 
 ## Unlisted Extra Credit
-*Built out parsing of employee names. 
+* Built out parsing of employee names. 
 
 ##Concerns, Comments, Ideas
 Setting `$to` to null to indicate the output of 1 date could be designed differently. Allowing for the idea of all dates from one date to current day could be potentially beneficial.  
 
 ##Future TODOs
-*Utilize currently unutilized capture of employee names.
-*Build output file with results over printing results to the console.
-*Handle employee-specific participation in holidays.
-*Handle non-fixed holidays.
+* Utilize currently unutilized capture of employee names.
+* Build output file with results over printing results to the console.
+* Handle employee-specific participation in holidays.
+* Handle non-fixed holidays.
