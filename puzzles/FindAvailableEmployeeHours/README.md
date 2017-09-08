@@ -18,7 +18,7 @@ Here's an example output:
 ## Getting Started
 
 1. Make sure PHP is installed on your machine and that you are running any &ast;nix system. 
-2. Download `FindAvailableEmployeeHours.php` & `input.txt` in this directory to your local machine.
+2. Download `FindAvailableEmployeeHours.php` & `input.txt` to your local machine.
 3. Make sure that the input file is in the same directory as `FindAvailableEmployeeHours.php` before running the php file.
 4. Run `FindAvailableEmployeeHours.php` in the command like like so:
   ```
