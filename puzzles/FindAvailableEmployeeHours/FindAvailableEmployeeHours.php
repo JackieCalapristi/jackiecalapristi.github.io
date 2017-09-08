@@ -156,9 +156,4 @@ $employee_hours->clean_file();
 $employee_hours->process_file();
 $employee_hours->process_employee_data();
 
-//TODO: Finish ReadMe.md
-//Add function comments
-//Break out process_file
-//Extra Credit
-
 ?> 
