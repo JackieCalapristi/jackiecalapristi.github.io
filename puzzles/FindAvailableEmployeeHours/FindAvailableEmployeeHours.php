@@ -1,7 +1,7 @@
 <?php 
-
 class EmployeeHours { 
     public $default_hours           = [];
+    public $company_holidays        = [];
     public $employees               = [];
     public $employee_data           = [];
     public $employee_availabilities = [];
@@ -43,10 +43,16 @@ class EmployeeHours {
                     $this->default_hours = explode(',', $this->cleaned_file[$key+1]);
                 }
 
+                //Populate $company_holidays
+                if (strpos($value, '# company holidays') !== false) {
+                    $this->company_holidays = explode(',', $this->cleaned_file[$key+1]);
+                }
+
                 //Populate $employees for unlisted extra credit
                 if (strpos($value, '#') !== 9
                     && ctype_alpha(substr($value, -2, -1)) //Ends with an alpha numeric character
                     && substr($value, -2, -1) !== ']' //Doesn't end with a bracket
+                    && substr($value, 0, 1) !== '"'
                     ) {
                     if (strpos($value, '# employees') !== false
                         || $populate_employees == true
@@ -66,8 +72,9 @@ class EmployeeHours {
                 }
 
                 //Run remaining rows through find_availabile_work_hours
-                if (substr($value, -2, -1) == ']'
-                    || substr($value, -2, -1) == '"'
+                if ((substr($value, -2, -1) == ']'
+                    || substr($value, -2, -1) == '"')
+                    && substr($value, 0, 1) !== '"'
                 ) {
                     //Get employee id for organization sake
                     $sub_val = explode(',', $value);
@@ -114,22 +121,30 @@ class EmployeeHours {
         //Remove quotes
         $from = str_replace('"', '', $from);
         $to = str_replace('"', '', $to);
+        foreach($this->company_holidays as $holiday) {
+            $this->company_holidays[] = str_replace('"', '', $holiday);
+        }
+
 
         //Handle a null $to seperately from non-null
         if (!empty($to)) {  
             $max = abs(floor((strtotime($from) - strtotime($to))/86400))+1; 
             //Loop from $from to $to
             for($i = 0; $i < $max; $i++) {
-                $date      = strtotime($from . ' + ' . $i . ' days');
-                $dayofweek = date('w', $date);
-                $hour      = !empty($override) ? $override[$dayofweek] : $this->default_hours[$dayofweek];
+                $date        = strtotime($from . ' + ' . $i . ' days');
+                $day_of_week = date('w', $date);
+                $hour        = !empty($override) ? $override[$day_of_week] : $this->default_hours[$day_of_week];
+                if (in_array(substr(date('m/d/Y', $date), 0, 5), $this->company_holidays)) 
+                {
+                    $hour = 0;
+                }
                 echo '<p>"' . date('m/d/Y', $date) . '", ' . $hour .' </p>';
 
             }
         } else {
-            $date      = strtotime($from);
-            $dayofweek = date('w', $date);
-            $hour      = !empty($override) ? $override[$dayofweek] : $this->default_hours[$dayofweek];
+            $date        = strtotime($from);
+            $day_of_week = date('w', $date);
+            $hour        = !empty($override) ? $override[$day_of_week] : $this->default_hours[$day_of_week];
             echo '<p>"' . date('m/d/Y', $date) . '", ' . $hour .' </p>';
         }
     }
