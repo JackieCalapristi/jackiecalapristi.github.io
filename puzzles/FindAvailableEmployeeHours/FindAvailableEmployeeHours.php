@@ -8,7 +8,6 @@ class EmployeeHours {
     public $raw_file;
     public $cleaned_file;
 
-
     public function get_raw_file_contents() 
     {
         $this->raw_file = file_get_contents('input.txt');
@@ -31,10 +30,8 @@ class EmployeeHours {
         foreach($this->cleaned_file as $key => $value)
         {   
             if (!empty($value) && $value != "\n") {
-
                 //Remove all titles with availability in the name
-                if (strpos($value, 'availability') !== false
-                ) {
+                if (strpos($value, 'availability') !== false) {
                     continue;
                 }
 
@@ -50,16 +47,12 @@ class EmployeeHours {
 
                 //Populate $employees for unlisted extra credit
                 if (strpos($value, '#') !== 9
-                    && ctype_alpha(substr($value, -2, -1)) //Ends with an alpha numeric character
-                    && substr($value, -2, -1) !== ']' //Doesn't end with a bracket
+                    && ctype_alpha(substr($value, -2, -1)) 
+                    && substr($value, -2, -1) !== ']' 
                     && substr($value, 0, 1) !== '"'
                     ) {
-                    if (strpos($value, '# employees') !== false
-                        || $populate_employees == true
-                    ) {
-                        if (strpos($value, '#') !== false 
-                            && strpos($value, '# employees') !== 0
-                        ) {
+                    if (strpos($value, '# employees') !== false || $populate_employees == true) {
+                        if (strpos($value, '#') !== false && strpos($value, '# employees') !== 0) {
                             $populate_employees = false;
                             continue;
                         }
@@ -116,15 +109,14 @@ class EmployeeHours {
         }
     }
 
-    public function find_availabile_work_hours($user_id, $from, $to, $override = null) 
+    public function find_availabile_work_hours($employee_id, $from, $to, $override = null) 
     {
         //Remove quotes
         $from = str_replace('"', '', $from);
-        $to = str_replace('"', '', $to);
+        $to   = str_replace('"', '', $to);
         foreach($this->company_holidays as $holiday) {
             $this->company_holidays[] = str_replace('"', '', $holiday);
         }
-
 
         //Handle a null $to seperately from non-null
         if (!empty($to)) {  
@@ -134,12 +126,10 @@ class EmployeeHours {
                 $date        = strtotime($from . ' + ' . $i . ' days');
                 $day_of_week = date('w', $date);
                 $hour        = !empty($override) ? $override[$day_of_week] : $this->default_hours[$day_of_week];
-                if (in_array(substr(date('m/d/Y', $date), 0, 5), $this->company_holidays)) 
-                {
+                if (in_array(substr(date('m/d/Y', $date), 0, 5), $this->company_holidays)) {
                     $hour = 0;
                 }
                 echo '<p>"' . date('m/d/Y', $date) . '", ' . $hour .' </p>';
-
             }
         } else {
             $date        = strtotime($from);
@@ -149,11 +139,9 @@ class EmployeeHours {
         }
     }
 } 
-
 $employee_hours = new EmployeeHours;
 $employee_hours->get_raw_file_contents();
 $employee_hours->clean_file();
 $employee_hours->process_file();
 $employee_hours->process_employee_data();
-
 ?> 
