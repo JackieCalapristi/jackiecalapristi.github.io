@@ -251,4 +251,5 @@ $employee_hours->get_raw_file_contents();
 $employee_hours->clean_file();
 $employee_hours->parse_file();
 $employee_hours->process_employee_data();
+
 ?>
