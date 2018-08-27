@@ -103,6 +103,13 @@
       <div class="section center padding-none">
         <div class="row center padding-none">
           <div class="col s12 m12 l12 center padding-none">
+            <!-- Include the library. -->
+            <script
+              src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+            </script>
+            <script>
+                GitHubCalendar(".calendar", "jackiecalapristi");
+            </script>
             <div class="calendar">
               <!-- Loading calendar-->
             </div>
@@ -655,14 +662,6 @@
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-71703832-1', 'auto');
       ga('send', 'pageview');
-    </script>
-
-    <!-- Include the library. -->
-    <script
-      src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
-    </script>
-    <script>
-        GitHubCalendar(".calendar", "jackiecalapristi");
     </script>
   </body>
 </html>
