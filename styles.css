@@ -15,7 +15,7 @@ body {
 }
 .code {
   width: 100%;
-  background: #757575 ; 
+  background: #757575 ;
   overflow: hidden;
   position: relative;
   margin-bottom:-5px;
@@ -40,31 +40,31 @@ body {
   margin-top:-135px;
 }
 .header-styles {
-  background-image:url(img/card4-optimized.jpg); 
+  background-image:url(img/card4-optimized.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
-  height:500px; 
+  background-position: center;
+  height:500px;
 }
 .header-content-styles {
-  padding-top:200px; 
+  padding-top:200px;
   font-size:65px;
 }
 .header-one-liner {
-  margin-top:-10px !important; 
-  font-weight:300; 
+  margin-top:-10px !important;
+  font-weight:300;
   font-size:26px
 }
 .header-span-name {
-  font-weight: 400; 
+  font-weight: 400;
   font-size: 30px;
 }
 .header-about-me {
-  font-weight:300; 
+  font-weight:300;
   font-size:35px;
 }
 .span-about-me {
-  font-weight: 400; 
+  font-weight: 400;
   font-size: 25px;
 }
 .padding-about-me {
@@ -83,7 +83,7 @@ body {
   font-weight:300;
 }
 .header-toolbox {
-  font-weight: 400; 
+  font-weight: 400;
   font-size: 35px;
 }
 .padding-top-10 {
@@ -96,7 +96,7 @@ body {
   margin-bottom:15px;
 }
 .margin-4 {
-  margin:4px; 
+  margin:4px;
 }
 .font-size-16 {
   font-size:16px;
@@ -179,8 +179,8 @@ img.responsive-img, video.responsive-video{margin-top:15px;}
   border-bottom: 2px #a7ffeb; padding-bottom:4px;
   font-weight: 200;}
 a:hover.link-text {
-  border-bottom: 2px #4db6ac; 
-  padding-bottom:4px; 
+  border-bottom: 2px #4db6ac;
+  padding-bottom:4px;
   color: #4db6ac !important;
   font-weight: 350;
 }
