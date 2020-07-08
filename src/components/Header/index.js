@@ -14,8 +14,8 @@ const Header = ({ siteTitle = ``}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuItems = [
     {id: 1, name: 'Resume', link: Resume }, 
-    {id: 2, name: 'Portfolio', link: '#portfolio'}, 
-    {id: 3, name: 'Contact', link: '#contact'},
+    {id: 2, name: 'Portfolio', link: '/#portfolio'}, 
+    {id: 3, name: 'Contact', link: '/#contact'},
   ];
 
   return (

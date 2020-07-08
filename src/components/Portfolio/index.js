@@ -3,7 +3,7 @@ import React from "react"
 import PortfolioCard from "./PortfolioCard"
 import { CardsWrapper, PortfolioWrapper } from "./PortfolioCard/PortfolioCard.styles"
 //Images
-import Tetris from "../../images/Tetris.jpg"
+// import Tetris from "../../images/Tetris.jpg"
 import Gatsby from "../../images/Gatsby.png"
 import ReactHooks from "../../images/ReactHooks.png"
 import Luum from "../../images/Luum.png"
