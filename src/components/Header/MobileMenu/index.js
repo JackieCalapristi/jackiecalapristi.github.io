@@ -10,7 +10,7 @@ const MobileMenu = ({ menuOpen, items }) => (
         <Nav>
           {items.map(item => (
             <li key={item.id}>
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
                 {item.name}
               </a>
             </li>
