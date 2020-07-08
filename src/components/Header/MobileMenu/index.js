@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from '@reach/router'
+import React from "react"
 
 // styles
 import { OverrideGlobalStyle, Wrapper, Nav } from "./MobileMenu.styles";

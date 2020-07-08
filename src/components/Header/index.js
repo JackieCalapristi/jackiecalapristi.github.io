@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from '@reach/router'
 // Components
 import Menu from "./Menu"
 import Hamburger from "./Hamburger"

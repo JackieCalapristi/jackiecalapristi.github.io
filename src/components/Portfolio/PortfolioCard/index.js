@@ -14,7 +14,7 @@ import {
 
 const PortfolioCard = ({ slug, title, date, excerpt, imageUrl, subtitle }) => (
   <CardWrapper>
-    <a href={slug} target="_blank">
+    <a href={slug} target="_blank" rel="noopener noreferrer">
       <ImgWrapper>
         <h6>{subtitle}</h6>
         <h2>{title}</h2>
