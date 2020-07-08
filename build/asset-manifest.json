@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/build/static/css/main.5f361e03.chunk.css",
+    "main.js": "/build/static/js/main.6a6a63c5.chunk.js",
+    "main.js.map": "/build/static/js/main.6a6a63c5.chunk.js.map",
+    "runtime-main.js": "/build/static/js/runtime-main.0f95d4b9.js",
+    "runtime-main.js.map": "/build/static/js/runtime-main.0f95d4b9.js.map",
+    "static/js/2.2b722076.chunk.js": "/build/static/js/2.2b722076.chunk.js",
+    "static/js/2.2b722076.chunk.js.map": "/build/static/js/2.2b722076.chunk.js.map",
+    "index.html": "/build/index.html",
+    "precache-manifest.3e9637b4d64404085ff91ce0be6035c5.js": "/build/precache-manifest.3e9637b4d64404085ff91ce0be6035c5.js",
+    "service-worker.js": "/build/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/build/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.2b722076.chunk.js.LICENSE.txt": "/build/static/js/2.2b722076.chunk.js.LICENSE.txt",
+    "static/media/BackgroundDesk.jpg": "/build/static/media/BackgroundDesk.949e3d0b.jpg",
+    "static/media/Calendar.svg": "/build/static/media/Calendar.89995abb.svg",
+    "static/media/Conversica.png": "/build/static/media/Conversica.0790af74.png",
+    "static/media/Gatsby.png": "/build/static/media/Gatsby.6458fa49.png",
+    "static/media/Headshot.jpg": "/build/static/media/Headshot.a08aabd3.jpg",
+    "static/media/Jackie_Calapristi_Resume_2020.pdf": "/build/static/media/Jackie_Calapristi_Resume_2020.4ab8102e.pdf",
+    "static/media/Luum.png": "/build/static/media/Luum.b4901396.png",
+    "static/media/Muli-Black.woff": "/build/static/media/Muli-Black.95a6b5b1.woff",
+    "static/media/Muli-ExtraLight.ttf": "/build/static/media/Muli-ExtraLight.c50e615d.ttf",
+    "static/media/Muli-Regular.woff": "/build/static/media/Muli-Regular.aae50cb4.woff",
+    "static/media/Raleway-Black.ttf": "/build/static/media/Raleway-Black.46818ebd.ttf",
+    "static/media/Raleway-Medium.ttf": "/build/static/media/Raleway-Medium.bb5ae98e.ttf",
+    "static/media/ReactHooks.png": "/build/static/media/ReactHooks.a43fdae0.png",
+    "static/media/Spacex.jpg": "/build/static/media/Spacex.f2b1b847.jpg",
+    "static/media/Tetris.jpg": "/build/static/media/Tetris.0e12f800.jpg",
+    "static/media/Vitech.png": "/build/static/media/Vitech.1c1d4532.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f95d4b9.js",
+    "static/js/2.2b722076.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.6a6a63c5.chunk.js"
+  ]
+}

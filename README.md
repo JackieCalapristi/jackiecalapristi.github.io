@@ -1,13 +1,3 @@
 # JackieCalapristi.com
 
-My personal website and portfolio of sorts. 
-
-## What did I use to make this?
-
-* Good ole' HTML & CSS 
-* A pinch of jQuery & Javascript
-* Materialize 
-* SVG (For that super cute laptop + coffee graphic)
-* [Github-Calendar](https://github.com/IonicaBizau/github-calendar#installation) to display my github contribution graph.
-
- 
+My personal website and portfolio powered by React, React Hooks, Styled-Components and googling my way through the design choices. Enjoy! 
