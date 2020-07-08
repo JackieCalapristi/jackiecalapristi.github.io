@@ -25,7 +25,7 @@ const Portfolio = () => {
   ];
   return (
     <PortfolioWrapper>
-      <h4><a id="portfolio" href="#">Porfolio</a></h4>
+      <h4><a href="#" id="portfolio" >Porfolio</a></h4>
       <CardsWrapper>
         {projects.map(project => 
           <PortfolioCard key={project.id} slug={project.slug} title={project.title} date={project.date} excerpt={project.excerpt} imageUrl={project.imageUrl} subtitle={project.subtitle} />
