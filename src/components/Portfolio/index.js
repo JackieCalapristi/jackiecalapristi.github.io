@@ -25,7 +25,7 @@ const Portfolio = () => {
   ];
   return (
     <PortfolioWrapper>
-      // eslint-disable-next-line
+      {// eslint-disable-next-line}
       <h4><a href="#porfolio" id="portfolio" >Porfolio</a></h4>
       <CardsWrapper>
         {projects.map(project => 
