@@ -1,10 +1,10 @@
-import styles from "styled-components"
+import styled from "styled-components"
 
-export const ContactWrapper = styles.div`
+export const ContactWrapper = styled.div`
   height: 280px;
   text-align: center;
 `
-export const IconsWrapper = styles.div`
+export const IconsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,6 @@ export const IconsWrapper = styles.div`
 
   a {
     color: #000;
-
   }
 
   svg {

@@ -1,6 +1,6 @@
-import styles from "styled-components";
+import styled from "styled-components";
 
-export const HamburgerIcon = styles.div`
+export const HamburgerIcon = styled.div`
   display: block;
   width: 30px;
   z-index: 1000;
