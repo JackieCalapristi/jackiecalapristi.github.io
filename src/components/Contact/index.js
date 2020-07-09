@@ -8,6 +8,7 @@ import { ContactWrapper, IconsWrapper } from "./Contact.styles"
 
 const Contact = () => (
   <ContactWrapper>
+    {/* eslint-disable-next-line */}
     <h4><a href="#contact" id="contact" >Get in Touch</a></h4>
     <IconsWrapper>
       <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jackie.lc11@gmail.com&body=Hey Jackie, let's get coffee!"><FontAwesomeIcon icon={faEnvelope} /></a>
