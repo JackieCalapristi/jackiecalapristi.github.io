@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from '@reach/router'
 // Icons
 import DateIcon from "../../../images/Calendar.svg"
 // Styles
@@ -14,7 +13,7 @@ import {
 
 const PortfolioCard = ({ slug, title, date, excerpt, imageUrl, subtitle }) => (
   <CardWrapper>
-    <a href={slug} target="_blank">
+    <a href={slug} rel="noopener noreferrer" target="_blank">
       <ImgWrapper>
         <h6>{subtitle}</h6>
         <h2>{title}</h2>

@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from '@reach/router'
+import React from "react"
 
 // styles
 import { OverrideGlobalStyle, Wrapper, Nav } from "./MobileMenu.styles";
@@ -11,7 +10,7 @@ const MobileMenu = ({ menuOpen, items }) => (
         <Nav>
           {items.map(item => (
             <li key={item.id}>
-              <a href={item.link} target="_blank">
+              <a href={item.link} rel="noopener noreferrer" target="_blank">
                 {item.name}
               </a>
             </li>
