@@ -7,7 +7,7 @@ const Menu = ({ items }) => (
   <Nav>
     {items.map(item => (
       <li key={item.id}> 
-        <a href={item.link} target={item.name === 'Resume' ? "_blank" : ""} rel="noopener noreferrer">
+        <a href={item.link} target={item.name == 'Resume' ? "_blank" : ""}>
           {item.name} 
         </a>
       </li>

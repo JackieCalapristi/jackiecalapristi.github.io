@@ -3,7 +3,7 @@ import React from "react"
 import PortfolioCard from "./PortfolioCard"
 import { CardsWrapper, PortfolioWrapper } from "./PortfolioCard/PortfolioCard.styles"
 //Images
-// import Tetris from "../../images/Tetris.jpg"
+import Tetris from "../../images/Tetris.jpg"
 import Gatsby from "../../images/Gatsby.png"
 import ReactHooks from "../../images/ReactHooks.png"
 import Luum from "../../images/Luum.png"
@@ -25,8 +25,7 @@ const Portfolio = () => {
   ];
   return (
     <PortfolioWrapper>
-      {/* eslint-disable-next-line} */}
-      <h4><a href="#porfolio" id="portfolio" >Porfolio</a></h4>
+      <h4><a id="portfolio">Porfolio</a></h4>
       <CardsWrapper>
         {projects.map(project => 
           <PortfolioCard key={project.id} slug={project.slug} title={project.title} date={project.date} excerpt={project.excerpt} imageUrl={project.imageUrl} subtitle={project.subtitle} />
