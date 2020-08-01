@@ -1,6 +1,6 @@
 import React from "react"
 // Icons
-import DateIcon from "../../../images/Calendar.svg"
+import DateIcon from "../../../images/calendar.svg"
 // Styles
 import {
   CardWrapper,

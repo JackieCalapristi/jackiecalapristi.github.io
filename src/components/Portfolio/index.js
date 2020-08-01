@@ -3,7 +3,7 @@ import React from "react"
 import PortfolioCard from "./PortfolioCard"
 import { CardsWrapper, PortfolioWrapper } from "./PortfolioCard/PortfolioCard.styles"
 //Images
-// import Tetris from "../../images/Tetris.jpg"
+import Tetris from "../../images/Tetris.jpg"
 import Gatsby from "../../images/Gatsby.png"
 import ReactHooks from "../../images/ReactHooks.png"
 import Luum from "../../images/Luum.png"
@@ -14,8 +14,8 @@ import Vitech from "../../images/Vitech.png"
 
 const Portfolio = () => {
   const projects = [
-    // {id: 1, slug: "/", subtitle: "Just For Fun", title: "React Tetris", date: "July 2020", excerpt: "This tetris app I'm building to learn about game development for fun is currently still in progress.", imageUrl: Tetris},
-    {id: 2, slug: "https://github.com/JackieCalapristi/gatsby-boilerplate-blog", subtitle: "Just For Fun", title: "Boilerplate Blog", date: "July 2020", excerpt: "This boilerplate blog is powered by Gatsby, Netlify, React Hooks, the Context API, GraphQL & styled components. Fork this & create the blog of your dreams!", imageUrl: Gatsby},
+    {id: 1, slug: "https://github.com/JackieCalapristi/gatsby-boilerplate-blog", subtitle: "Just For Fun", title: "Boilerplate Blog", date: "July 2020", excerpt: "This boilerplate blog is powered by Gatsby, Netlify, React Hooks, the Context API, GraphQL & styled components. Fork this & create the blog of your dreams!", imageUrl: Gatsby},
+    {id: 2, slug: "https://github.com/JackieCalapristi/simple-tetris", subtitle: "Just For Fun", title: "Tetris", date: "July 2020", excerpt: "I built a simple tetris game using only React & React Hooks. The jury is still out regarding if this was a good idea, but I learned a lot and had a lot of fun making this!", imageUrl: Tetris},
     {id: 3, slug: "https://github.com/JackieCalapristi/tmdb-movies-app", subtitle: "Just For Fun", title: "Movie App", date: "June 2020", excerpt: "This is a movie app that utilizes React Hooks, styled components, Netlify & the The Movie Database API.", imageUrl: ReactHooks},
     {id: 4, slug: "https://luumbenefits.com/", subtitle: "Professional Work", title: "Luum", date: "2019 - Present", excerpt: "At Luum I'm helping to build lot's of features within our MaaS (mobility as a service) products that help major employers understand, influence & distribute commuter benefits to all of their employees!", imageUrl: Luum},
     {id: 5, slug: "https://github.com/rodolfobandeira/spacex", subtitle: "Open Source", title: "SpaceX Ruby API", date: "October 2018", excerpt: "In this open source project, I created support for all API calls surrounding Dragon Capsules including tests & documentation.", imageUrl: SpaceX},
