@@ -1,7 +1,7 @@
 import React from "react"
 
 // Icons
-import DateIcon from "./calendar.svg"
+import DateIcon from "../../../images/calendar.svg"
 
 // Styles
 import {
