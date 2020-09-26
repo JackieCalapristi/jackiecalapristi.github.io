@@ -1,4 +1,5 @@
 import React from "react"
+
 // Styles
 import { Wrapper } from "./Welcome.styles"
 

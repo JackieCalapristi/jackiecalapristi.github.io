@@ -1,8 +1,10 @@
 import React from "react"
+
 // Icons
 import { faGithub, faLinkedinIn, faMediumM, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 // Styles
 import { ContactWrapper, IconsWrapper } from "./Contact.styles"
 
