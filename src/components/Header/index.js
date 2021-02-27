@@ -7,7 +7,7 @@ import Welcome from "./Welcome"
 // Styles
 import { MenuWrapper, Wrapper } from "./Header.styles"
 // Links
-import Resume from "../../documents/Jackie_Calapristi_Resume_2020.pdf"
+import Resume from "../../documents/Jackie_Calapristi_Resume_2021.pdf"
 
 const Header = ({ siteTitle = ``}) => {
   const [menuOpen, setMenuOpen] = useState(false);
