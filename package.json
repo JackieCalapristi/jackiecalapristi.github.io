@@ -22,6 +22,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "serialize-javascript": "^4.0.0",
+    "ssri": "^7.0.0",
     "styled-components": "^5.1.1",
     "typescript": "^3.9.7",
     "websocket-extensions": "^0.1.4"
