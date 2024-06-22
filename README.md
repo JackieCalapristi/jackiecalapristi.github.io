@@ -1,3 +1,3 @@
-## Welcome to my personal portfolio site
+# Welcome to Jackie Calapristi's Portfolio Website
 
-This site showcases some personal projects, open source projects and professional work I've done. It was made using react, react hooks (to manage the state of the open/close mobile menu for now :)) and styled-components. It has continuous deployment set up with Netlify. Enjoy!
+This website showcases some of my personal projects, open source projects, and professional work I've done. It was made using Vite, React, Typescript, and Styled Components. It has continuous deployment set up with Netlify. Enjoy!
