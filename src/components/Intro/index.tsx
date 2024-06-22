@@ -11,7 +11,7 @@ const Intro = () => (
       <Avatar
         alt="headshot of Jackie Calapristi smiling in Italy"
         src={Headshot}
-        sx={{ width: 250, height: 250, padding: "30px 0px 30px 0px" }}
+        sx={{ width: 300, height: 300, padding: "30px 0px 30px 0px" }}
       />
     </ImgWrapper>
     <TextWrapper>

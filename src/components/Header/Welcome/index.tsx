@@ -5,7 +5,7 @@ import { Wrapper } from "./Welcome.styles"
 
 const Welcome = () => (
   <Wrapper>
-    <h1>Hi! It's nice to meet you.</h1>
+    <h1>It's nice to meet you.</h1>
     <h5>My name is Jackie Calapristi.</h5>
   </Wrapper>
 );

@@ -27,7 +27,7 @@ const bull = (
 );
 
 const PortfolioCard = ({ slug, title, date, excerpt, subtitle, acquisition }: portfolioCard) => (
-  <Card sx={{ minWidth: 275, maxWidth: 300  }}>
+  <Card sx={{ minWidth: 275, maxWidth: 300, borderRadius: "15px", display: "flex", flexDirection: "column", justifyContent: "space-between"  }}>
     <CardContent>
       <Typography sx={{ fontSize: 10 }} color="text.secondary" gutterBottom>
         {subtitle.toUpperCase()}
@@ -36,7 +36,7 @@ const PortfolioCard = ({ slug, title, date, excerpt, subtitle, acquisition }: po
         {title}
       </Typography>
       <Typography sx={{ mb: 1.5, fontSize: '14px' }} color="#666666">
-        {date} {acquisition && (<>{bull}{' '}{acquisition} </> )}
+        {date && <>{date}</>}{acquisition && (<>{bull}{' '}{acquisition} </> )}
       </Typography>
       <Typography variant="body2">
         {excerpt}

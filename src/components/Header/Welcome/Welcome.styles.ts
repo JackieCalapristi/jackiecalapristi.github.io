@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     display: block;
     h1 {
-      font-size: 80px;
+      font-size: 78px;
       margin-top: 110px;
     }
     h5 {
