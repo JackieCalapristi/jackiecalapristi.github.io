@@ -6,5 +6,5 @@ export const FooterWrapper = styled.div`
   background-color: #222222;
   color: #FFFFFF;
   font-size: 19px;
-  padding-top: 15px;
+  padding-top: 22px;
 `
